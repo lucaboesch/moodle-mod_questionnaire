@@ -29,7 +29,6 @@ use mod_questionnaire\question\question;
 
 global $CFG;
 require_once($CFG->dirroot.'/mod/questionnaire/locallib.php');
-require_once($CFG->dirroot . '/mod/questionnaire/classes/question/question.php');
 
 /**
  * Unit tests for questionnaire_questiontypes_testcase.
@@ -97,6 +96,9 @@ class mod_questionnaire_questiontypes_testcase extends advanced_testcase {
         $this->create_test_question(QUESYESNO, '\\mod_questionnaire\\question\\yesno', array('content' => 'Enter yes or no'));
     }
 
+    public function test_create_question_file() {
+        $this->create_test_question(QUESFILE, '\\mod_questionnaire\\question\\file', []);
+    }
 
     // General tests to call from specific tests above.
 
