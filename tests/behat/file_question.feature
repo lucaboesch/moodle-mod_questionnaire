@@ -22,7 +22,7 @@ Feature: Add a question requiring a file upload in questionnaire.
       | questionnaire | Test questionnaire | Test questionnaire description | C1     | questionnaire0 | 1      | 1        |
 
   @javascript @_file_upload
-  Scenario: Add a single file question to a questionnaire and view an answer with an uploaded file.
+  Scenario: As a teacher, I create a questionnaire in my course with a file question and a student answers to it. Then the file has to be accessible.
     Given I log in as "teacher1"
     When I am on the "Test questionnaire" "questionnaire activity" page
     And I navigate to "Questions" in current page administration
@@ -35,7 +35,7 @@ Feature: Add a question requiring a file upload in questionnaire.
     And I log in as "student1"
     And I am on the "Test questionnaire" "questionnaire activity" page
     And I navigate to "Answer the questions..." in current page administration
-    And I upload "mod/questionnaire/tests/fixtures/testfilequestion.pdf" to questionnaire "Add a file as an answer" filemanager
+    And I upload "mod/questionnaire/tests/fixtures/testfilequestion.pdf" to questionnaire filemanager
     And I press "Submit questionnaire"
     And I should see "Thank you for completing this Questionnaire"
     And I press "Continue"
