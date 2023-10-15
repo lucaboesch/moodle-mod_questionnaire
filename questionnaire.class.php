@@ -20,6 +20,7 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->dirroot.'/mod/questionnaire/locallib.php');
 
+#[\AllowDynamicProperties]
 /**
  * Provided the main API functions for questionnaire.
  *
@@ -28,7 +29,6 @@ require_once($CFG->dirroot.'/mod/questionnaire/locallib.php');
  * @author     Mike Churchward
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-#[AllowDynamicProperties]
 class questionnaire {
 
     // Class Properties.

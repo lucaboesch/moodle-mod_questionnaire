@@ -34,7 +34,7 @@ use Behat\Behat\Context\Step\Given as Given,
 use Behat\Mink\Element\NodeElement;
 use Behat\Mink\Exception\DriverException;
 
-;
+#[\AllowDynamicProperties]
 /**
  * Questionnaire-related steps definitions.
  *

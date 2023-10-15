@@ -51,7 +51,7 @@ $idcounter = 0;
 
 require_once($CFG->dirroot.'/mod/questionnaire/locallib.php');
 
-
+#[\AllowDynamicProperties]
 /**
  * Class for describing a question
  *
