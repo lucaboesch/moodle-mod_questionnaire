@@ -32,7 +32,9 @@ use Behat\Behat\Context\Step\Given as Given,
     Behat\Gherkin\Node\TableNode as TableNode,
     Behat\Mink\Exception\ExpectationException as ExpectationException,
     Behat\Mink\Element\NodeElement,
-    Behat\Mink\Exception\DriverException;
+    Behat\Mink\Exception\DriverException,
+    Behat\Gherkin\Node\PyStringNode as PyStringNode,
+    Behat\Mink\Exception\ExpectationException as ExpectationException;
 
 #[\AllowDynamicProperties]
 /**
