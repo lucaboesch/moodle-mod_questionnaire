@@ -30,12 +30,11 @@ require_once(__DIR__ . '/../../../../lib/behat/behat_base.php');
 use Behat\Behat\Context\Step\Given as Given,
     Behat\Behat\Context\Step\When as When,
     Behat\Gherkin\Node\TableNode as TableNode,
-    Behat\Mink\Exception\ExpectationException as ExpectationException;
+    Behat\Mink\Exception\ExpectationException as ExpectationException,
+    Behat\Mink\Element\NodeElement,
+    Behat\Mink\Exception\DriverException;
 
 #[\AllowDynamicProperties]
-use Behat\Mink\Element\NodeElement;
-use Behat\Mink\Exception\DriverException;
-
 /**
  * Questionnaire-related steps definitions.
  *
