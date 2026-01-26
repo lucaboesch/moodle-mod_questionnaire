@@ -340,8 +340,21 @@ $string['missingquestion'] = 'Please answer required question ';
 $string['missingquestions'] = 'Please answer required questions: ';
 $string['missingrequired'] = 'Question {$a} cannot be used in this feedback section because it is not required.';
 $string['modulename'] = 'Questionnaire';
-$string['modulename_help'] = 'The questionnaire module allows you to construct surveys using a variety of question types, for the purpose of gathering data from users.';
+$string['modulename_help'] = '###### Key features
+- Student feedback collection with optional anonymous responses.
+- Reusable questionnaire templates for consistency and efficiency.
+- Flexible availability windows with optional start and end dates.
+- Configurable response limits (once, recurring, or unlimited).
+- Advanced options including save and resume, conditional branching, and automatic numbering.
+
+###### Ways to use it
+- Gather feedback on courses, teaching, or learning activities.
+- Conduct anonymous evaluations to encourage honest responses.
+- Reuse standardised questionnaires across multiple modules.
+- Run surveys with flexible timing and response options.
+- Award participation grades to encourage completion.';
 $string['modulename_link'] = 'mod/questionnaire/view';
+$string['modulename_summary'] = 'Allows you to construct surveys using a variety of question types, for the purpose of gathering data from users.';
 $string['modulenameplural'] = 'Questionnaires';
 $string['monthly'] = '1 per month';
 $string['movedisabled'] = 'This item cannot be moved';
